@@ -7,8 +7,22 @@
 
 .destaques__principal { /*Quando colocamos dois __ quer dizer que a classe é um elemento filho de Destaques. Isso é metodologia BEM*/
     background-image: url("../img/fortnite.jpg");
+    background-position: center;/*Para se alinhar ao centro do espaço*/
+    background-repeat: no-repeat; /*Para a imagem não se repetir*/
+    background-size: cover; /*Para tomar todo o espaço*/
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.destaques__secundario {
+    background-image: url("../img/pubg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
