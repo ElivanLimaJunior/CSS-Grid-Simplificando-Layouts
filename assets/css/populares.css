@@ -16,7 +16,9 @@
         "card-imagem"
         "card-corpo";
     grid-template-columns: 100%;
-    width: 20%;
+    grid-template-rows: 173px auto; /*A primeira linha do card vai ter 173 pixel, ou seja todas as imagens. E a parte debaixo que é o conteudo do card, vai se ajustar automaticamente.*/
+    margin-right: 1rem; /*Criando um espaço a direita.*/
+    width: calc(20% - 1rem); /*Diminuindo 1rem do width do nosso card para que ele fique separado e caiba os 5 na mesma ROW*/
 }
 
 .populares__card___imagem {
