@@ -1,5 +1,5 @@
 .populares {
-    padding: 3rem 2rem; /*Adicionando uma margin nos lados para descolar a esquerda desgrudar da borda*/
+    padding: 3rem 0rem; /*Adicionando uma margin nos lados para descolar a esquerda desgrudar da borda*/
 }
 
 .populares__conteudo {
