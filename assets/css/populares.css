@@ -1,5 +1,5 @@
 .populares {
-    padding: 3rem 0;
+    padding: 3rem 2rem; /*Adicionando uma margin nos lados para descolar a esquerda desgrudar da borda*/
 }
 
 .populares__conteudo {
@@ -21,6 +21,10 @@
     width: calc(20% - 1rem); /*Diminuindo 1rem do width do nosso card para que ele fique separado e caiba os 5 na mesma ROW*/
 }
 
+.populares__card:last-child {
+    margin: 0;
+}
+
 .populares__card___imagem {
     grid-area: card-imagem;
     height: 100%;
@@ -36,4 +40,41 @@
         "card-conteudo";
     grid-template-rows: 50px auto;
     padding: .75rem;
+}
+
+.populares__card___titulo {
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data {
+    color: #333333;
+    font-size: .9rem;
+}
+
+.populares__card___descricao {
+    color: #333;
+    line-height: 1.5; /*Altura da linha*/
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo {
+    font-weight: 500;
+}
+
+.populares__icone {
+    margin-right: .25rem;  
+}
+
+.populares__cabecalho { /*Display flex para fazer eles ficarem cada um em um canto.*/
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between; /*Fazer eles ficarem cada qual em seu canto.*/
+}
+
+.populares__botao { /*Removendo estilo do botão.*/
+    background: transparent; /*Sem background*/
+    border: none; /*Sem bordas do botão*/
+    color: #333;
 }
