@@ -19,7 +19,7 @@
  
 .conteudo {
     grid-area: conteudo;
-    padding: 0 2rem; /*Notamos que o conteudo estava colado nas marges, então pegamos o mesmo padding q usamos nos populares e colocamos aqui. Porem é necessario remover o espaçamento que está na parte de destaques, para que ele respeite o espaçamento.*/
+    padding: 0 2rem; /*Notamos que o conteudo estava colado nas marges, então pegamos o mesmo padding q usamos nos populares e colocamos aqui. Porem é necessario remover o espaçamento que está na parte de destaques, para que ele respeite o espaçamento..*/
 }
 
 .rodape {
