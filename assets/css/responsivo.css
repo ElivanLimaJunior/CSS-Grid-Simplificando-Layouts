@@ -63,12 +63,31 @@
     .destaques__categorias {
         grid-column: 1 / 3;
     }
+    .populares__conteudo {
+        flex-direction: row; /*Agora precisa ser por linha pois teremos um ao lado do outro.*/
+    }
+    .populares__card {
+        grid-template-rows: 173px auto;
+        margin-bottom: 3rem;
+        margin-right: 1rem;
+        width: calc(50% - 1rem);
+    }
 }
 
 @media screen and (min-width: 992px) {
-    
+    .populares__card {
+        width: calc(33.33% - 1rem);
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
+    .populares__card {
+        margin-bottom: 0;
+        width: calc(20% - 1rem);
+    }
 }
+
+/*Se as classes não mudarem não precisamos repetir as declarações.
+Por isso na medida que vamos descendo nós vamos mudando as tags se for necessario.
+
+se temos margin-right no @media 768px, e ele vai permanecer no 992px, então não precisamos declarar o margin novamente.*/
