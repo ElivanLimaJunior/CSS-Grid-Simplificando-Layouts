@@ -1,0 +1,34 @@
+@media screen and (min-width: 0) {
+    .destaques__secundario:nth-child(2) { /*Escondendo o PUBG*/
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .destaques__secundario:nth-child(3) { /*Escondendo o SLACK*/
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .destaques__secundario:nth-child(4) { /*Escondendo o Whatsapp*/
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .destaques__secundario:nth-child(5) { /*Escondendo o CS:GO*/
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+}
