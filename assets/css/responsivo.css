@@ -1,5 +1,5 @@
 @media screen and (min-width: 0) {
-    .destaques__principal {
+    .destaques__principal, .destaques__categorias { /*principal e categorias irão receber o mesmo grid-column, então coloquei os dois juntos na declaração.*/
         grid-column: 1 / 5;
         /*grid-row: 1 / 3;*/ /*Ele foi removido por que já existe no "destaques.css"
         
@@ -28,7 +28,32 @@
 }
 
 @media screen and (min-width: 768px) {
-
+    .destaques__principal, .destaques__categorias {
+        grid-column: 1 / 4;
+    }
+    .destaques__secundario:nth-child(2) { /*Mostrando o PUBG*/
+        display: flex;
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+    }
+    .destaques__secundario:nth-child(3) { /*Mostrando o SLACK*/
+        display: flex;
+        grid-column: 4 / 4;
+        grid-row: 2 / 2;
+    }
+    .destaques__secundario:nth-child(4) { /*Mostrando o Whatsapp*/
+        display: flex;
+        grid-column: 4 / 4;
+        grid-row: 3 / 3;
+    }
+    .destaques__secundario:nth-child(5) { /*Mostrando o CS:GO*/
+        display: flex;
+        grid-column: 3 / 3;
+        grid-row: 3 / 3;
+    }
+.destaques__categorias {
+    grid-column: 1 / 3;
+}
 }
 
 @media screen and (min-width: 992px) {
