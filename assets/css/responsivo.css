@@ -1,4 +1,10 @@
 @media screen and (min-width: 0) {
+    .destaques__principal {
+        grid-column: 1 / 5;
+        /*grid-row: 1 / 3;*/ /*Ele foi removido por que já existe no "destaques.css"
+        
+        Também é necessarior irmos até o "destaques.css" e remover o grid column de todos os filhos, pois eles serão passados aqui no responsivo para ser ajustado em cada tamanho de tela*/
+    }
     .destaques__secundario:nth-child(2) { /*Escondendo o PUBG*/
         display: none;
         grid-column: none;
